@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>kinding - challenges</title>
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel="stylesheet" href="/css/challenges.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+        <script defer type="text/javascript" src="/js/challenges.js"></script>
+    </head>
+
+    <body>
+        <div class="page custom-full-popup-page">
+
+            <div class="back-button-div">
+                <img class="back-icon" id="back-icon" src="/images/back-icon.png" alt="back">
+            </div>
+
+            <div class="challenge-title" style="margin-bottom:30%;">
+                <p class="text-title">kinding<br>challenge</p>
+                <img class="down-arrow" src="/images/down-arrow.png">
+            </div>
+            <!-- INSERT API PLACEHOLDER HERE -->
+            <div id="app" class="app-div">
+                 <ul>
+                     <li id="list-id">
+     					<p class="clipboard-text">{{items[Math.floor(Math.random() * items.length)]['fields'] ['Challenges-column']}}</p>
+
+     			   </li>
+                 </ul>
+     			  </div>
+
+      <!-- COPT TEXT TO CLIPBOARD -->
+          <div class="popup">
+            <img class="clipboard" id="clipboard"" src="/images/clipboard.png" alt="clipboard">
+            <span class="popuptext" id="myPopup">Copied!</span>
+          </div>
+<!-- COPT TEXT TO CLIPBOARD POPUP -->
+
+
+
+       <!-- BUTTONS -->
+            <div class="buttons">
+                <button id="success-button" class="modal-button">I will do it&#33;</button>
+                <button id="reminder-button" class="modal-button">Remind me<br>in 1 hour</button>
+                <button id="encourage-button" class="modal-button">I need encouragement</button>
+                <button id="failure-button" class="modal-button">I can't do it...</button>
+        </div>
+
+        <!-- The Success Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="success-modal-content">
+            <span class="close">&times;</span>
+            <div class="div-text">
+              <p class="modal-heading">GREAT JOB!</p>
+              <p class="modal-paragraph">Difficult? Maybe.<br>Uncomfortable? Probably.<br><b>Worth it? Definitely.</b>
+            </div>
+              <div class="share">
+                <a href="https://www.facebook.com/groups/kinding" target="_blank">Share your kinding story</a>
+              </div>
+          </div>
+        </div>
+
+        <!-- The Reminder Modal-->
+        <div id="myModal2" class="modal">
+          <!-- Modal content -->
+          <div class="reminder-modal-content">
+            <span class="close">&times;</span>
+            <div class="div-text2">
+              <p class="modal-heading2">SORRY!</p>
+              <p class="modal-paragraph2">This feature is coming soon.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- The Encourage Modal -->
+        <div id="myModal1" class="modal">
+          <!-- Modal content -->
+          <div class="encouragement-modal-content">
+            <span class="close">&times;</span>
+            <div class="div-text1">
+              <p class="modal-heading1">YOU GOT THIS!</p>
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0" target="_blank">Here you go.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Failure Modal -->
+        <div id="myModal3" class="modal">
+          <!-- Modal content -->
+          <div class="failure-modal-content">
+            <span class="close">&times;</span>
+            <div class="div-text3">
+              <p class="modal-heading3">THAT&apos;S OK!</p>
+              <div class="failure-quote">
+                <p><i>Success is not final, failure is not fatal: it is the courage to continue that counts.</i></p>
+              </div>
+            <p class="modal-footer3"><b>Refresh the app to try again!</b></p>
+          </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+	<script type="text/javascript" src="/js/vue.js"></script>
+        <script type="text/javascript" src="/js/axios.min.js"></script>
+<script type="text/javascript" src="/js/airtable.js"></script>
+    </body>
+
+</html>

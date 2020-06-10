@@ -1,0 +1,413 @@
+* {
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+}
+
+.back-icon {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 10px;
+    top: 10px;
+}
+
+.back-icon:hover {
+    cursor: pointer;
+}
+
+.text-title {
+    position: absolute;
+    width: 173px;
+    height: 58px;
+    left: 70px;
+    top: 14px;
+    font-family: Nunito;
+    font-weight: 100;
+    font-size: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #2C2C2C;
+
+}
+
+.down-arrow {
+    position: absolute;
+    width: 37px;
+    height: 23px;
+    left: 132px;
+    top: 102px;
+}
+
+.app-div {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Nunito;
+    border-width: 0px;
+    font-weight: 100;
+}
+
+.clipboard {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  left: 272px;
+  top: 283px;
+  cursor: pointer;
+  }
+
+.popup {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* The actual popup */
+.popup .popuptext {
+    position: absolute;
+    visibility: hidden;
+    width: 64px;
+    height: 23px;
+    left: 202px;
+    top: 286px;
+    padding-top: 4px;
+    background-color: rgba(44, 44, 44, 0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    z-index: 9999;
+    font-size: 14px;
+    font-family: Nunito;
+    font-weight: 100;
+  }
+
+  /* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 100%;
+    margin-left: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(44, 44, 44, 0.75);
+  }
+
+  /* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+
+
+
+#list-id {
+  list-style-type: none;
+}
+
+#success-button {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 0px;
+    top: 321px;
+    background: #ADF7B6;
+    text-align: center;
+    font-size: 30px;
+    font-family: Nunito;
+    border-width: 0px;
+    font-weight: 100;
+    color: #2C2C2C;
+}
+
+#reminder-button {
+    position: absolute;
+    width: 150px;
+    height: 69px;
+    left: 0px;
+    top: 391px;
+    background: #8BE1DE;
+    text-align: center;
+    font-size: 18px;
+    font-family: Nunito;
+    border-width: 0px;
+    font-weight: 100;
+    color: #2C2C2C;
+}
+
+
+#encourage-button {
+    position: absolute;
+    width: 150px;
+    height: 69px;
+    left: 150px;
+    top: 391px;
+    background: #FFEE93;
+    text-align: center;
+    font-size: 18px;
+    font-family: Nunito;
+    border-width: 0px;
+    font-weight: 100;
+    color: #2C2C2C;
+}
+
+#failure-button {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 0px;
+    top: 460px;
+    background: #FFC09F;
+    text-align: center;
+    font-size: 18px;
+    font-family: Nunito;
+    border-width: 0px;
+    font-weight: 100;
+    color: #2C2C2C;
+}
+.modal-button:hover {
+    cursor: pointer;
+}
+.modal-button:focus {
+  outline: none;
+}
+
+/* The Modals (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.75);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* The Close Button */
+.close {
+  color: #2C2C2C;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Success Modal Content/Box */
+.success-modal-content {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  left: 20px;
+  top: 150px;
+  background: #ADF7B6;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.modal-heading {
+  position: absolute;
+  font-size: 26px;
+  line-height: 26px;
+  top: 30px;
+  margin-left: 60px;
+}
+
+.modal-paragraph {
+  margin-top: 75px;
+}
+
+.div-text {
+  font-family: Nunito;
+  font-weight: 100;
+  text-align: center;
+  color: #2C2C2C;
+}
+
+.share a {
+    position: absolute;
+    font-family: Nunito;
+    font-weight: 100;
+    color: #2C2C2C;
+    text-decoration-line: underline;
+    top: 161px;
+    left: 34px;
+}
+.a:link {
+    color: #2C2C2C;
+}
+.share:hover {
+    cursor: pointer;
+    color: #9997B6;
+}
+/* END */
+
+/* Reminder Modal Content/Box */
+
+.reminder-modal-content {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  left: 20px;
+  top: 150px;
+  background: #8BE1DE;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.div-text2 {
+  font-family: Nunito;
+  font-weight: 100;
+  text-align: center;
+  color: #2C2C2C;
+}
+
+.modal-heading2 {
+  font-size: 26px;
+  line-height: 26px;
+  position: absolute;
+  width: 92px;
+  height: 26px;
+  left: 84px;
+  top: 30px;
+}
+
+.modal-paragraph2 {
+  position: absolute;
+  width: 221px;
+  height: 18px;
+  left: 20px;
+  top: 78px;
+}
+
+/* END */
+
+/* Encouragement Modal Content/Box */
+
+.encouragement-modal-content {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  left: 20px;
+  top: 150px;
+  background: #FFEE93;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.div-text1 {
+  font-family: Nunito;
+  font-weight: 100;
+  text-align: center;
+  color: #2C2C2C;
+}
+
+.modal-heading1 {
+  font-size: 26px;
+  line-height: 26px;
+  position: absolute;
+  width: 182px;
+  height: 26px;
+  left: 39px;
+  top: 30px;
+}
+
+.video a {
+    position: absolute;
+    font-family: Nunito;
+    font-weight: 100;
+    color: #2C2C2C;
+    text-decoration-line: underline;
+    top: 78px;
+    left: 80px;
+}
+.video:hover {
+    cursor: pointer;
+    color: #9997B6;
+}
+
+/* END */
+
+/* Failure Modal Content/Box */
+
+.failure-modal-content {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  left: 20px;
+  top: 150px;
+  background: #FFC09F;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.div-text3 {
+  font-family: Nunito;
+  font-weight: 100;
+  text-align: center;
+  color: #2C2C2C;
+}
+
+.modal-heading3 {
+  position: absolute;
+  left: 62px;
+  top: 30px;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.failure-quote {
+  position: absolute;
+  top: 73px;
+  left: 8px;
+  width: 244px;
+  height: 54px;
+}
+
+.modal-footer3 {
+  position: absolute;
+  left: 14px;
+  top: 161px;
+  font-family: Nunito;
+  font-weight: 300;
+  text-align: center;
+  color: #2C2C2C;
+}
+
+/* END */

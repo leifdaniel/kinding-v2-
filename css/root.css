@@ -1,0 +1,170 @@
+* {
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+}
+
+.background-image {
+    position: absolute;
+    height: 500px;
+    width: 300px;
+}
+
+.icon-logo {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 115px;
+    top: 12px;
+}
+
+.slogan {
+    position: absolute;
+    left: 14px;
+    top: 113px;
+    font-family: Nunito;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.title-div {
+    position: absolute;
+    width: 276px;
+    height: 200px;
+    left: 12px;
+    top: 147px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+.text-title {
+    position: absolute;
+    width: 148px;
+    height: 46px;
+    left: 14px;
+    top: 17px;
+    font-family: Nunito;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 46px;
+    line-height: 46px;
+    color: #2C2C2C;
+}
+
+.phonetic-title {
+    position: absolute;
+    width: 136px;
+    height: 19px;
+    left: 15px;
+    top: 69px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 19px;
+    color: #2C2C2C;
+}
+
+.line {
+    position: absolute;
+    width: 230px;
+    height: 0px;
+    left: 15px;
+    top: 102px;
+    border: 1px solid #2C2C2C;
+}
+
+.definition-title {
+    position: absolute;
+    width: 228px;
+    height: 63px;
+    left: 15px;
+    top: 115px;
+    font-family: Nunito;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 19px;
+    color: #2C2C2C;
+}
+
+.more-info {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 246px;
+    top: 170px;
+    z-index: 999;
+}
+
+.more-info:hover {
+    cursor: pointer;
+}
+
+.get {
+    position: absolute;
+    left: 24px;
+    top: 367px;
+    font-family: Nunito;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.go-button {
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    left: 55px;
+    background-color: #A7A5C6;
+    border-radius: 20px;
+    border-width: 0px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    font-family: Nunito;
+    top: 406px;
+}
+
+.go-button:hover {
+    background: #9997B6;
+    cursor: pointer;
+}
+
+.go-button:focus {
+  outline: none;
+}
+
+.share a {
+    position: absolute;
+    left: 54px;
+    top: 469px;
+    font-family: Nunito;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #2C2C2C;
+    text-decoration-line: underline;
+}
+
+.a:link {
+    color: #2C2C2C;
+}
+
+.share:hover {
+    cursor: pointer;
+    color: #9997B6;
+}
